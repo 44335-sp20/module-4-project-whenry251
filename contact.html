@@ -26,9 +26,9 @@
           Name: <input type="text" name="name"><br>
           Address: <input type="text" name="name">
           <select name="state">
-            <option class = "state" value="UT">Utah</option>
-            <option class = "state" value="CA">California</option>
-            <option class = "state" value="NY">New York</option>
+            <option id="state1" class = "state" value="UT">Utah</option>
+            <option id="state2" class = "state" value="CA">California</option>
+            <option id="state3" class = "state" value="NY">New York</option>
           </select>        
       </fieldset>
       <input id="maleRB" type="radio" name="gender" value="male">
@@ -48,27 +48,19 @@
 			//Step 5: Set an id on each option in the select tag. Name the id's state1, state2, and state3.
 			//Change the states that are used in the dropdown box to "Missouri", "Iowa", "Nebraska". 
 			//Change the states value property to the appropriate state abbreviation. 
-
-			
-			
-			
-			
-			
-			
-			
+            /*document.getElementById("state1").innerHTML = "Missouri";
+            document.getElementById("state2").innerHTML = "Iowa";
+            document.getElementById("state3").innerHTML = "Nebraska";
+            document.getElementById("state1").value = "MO";
+            document.getElementById("state2").value = "IA";
+            document.getElementById("state3").value = "NE";*/
 	
 			//Comment out the code for Step 5. On the Contact.html page, write the code to change all of the states with the class "state"
 			//to the word "Hello". You must use a for loop in your solution.
-
-			
-			
-			
-			
-			
-			
-			
-			
-			
+            var stateList = document.getElementsByClassName("state");
+            for (var i = 0; i < stateList.length; i++){
+                stateList[i].innerHTML = "Hello";
+            }		
 	
 	</script>
 	</div>
